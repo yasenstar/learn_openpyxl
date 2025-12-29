@@ -115,11 +115,32 @@ Source code reference:
 Adding new worksheets is straightforward using the `create_sheet()` method. This method takes the sheet name as the first argument, and optional arguments for `index` (position within the workbook) and `before` (insert before another sheet):
 
 ```python
+from openpyxl import Workbook
+
+workbook = Workbook()
+
+# Create a new worksheet name "Data" at the end
+new_worksheet = workbook.create_sheet(title="Data")
+
+# Create a new worksheet named "Summary" before the sheet named "Data"
+summary_worksheet = workbook.create_sheet(
+    title = "Summary",
+    index = 1
+    # before = new_worksheet # TypeError: Workbook.create_sheet() got an unexpected keyword argument 'before'
+)
+
+sales_worksheet = workbook.create_sheet(
+    title = "Sales",
+    index = 2
+    # before = new_worksheet # TypeError: Workbook.create_sheet() got an unexpected keyword argument 'before'
+)
+
+workbook.save("workbook_with_sheets.xlsx")
 ```
 
 Source code reference:
 
-- `workbook.create_sheet()`: https://foss.heptapod.net/openpyxl/openpyxl/-/blob/branch/default/openpyxl/workbook/workbook.py?ref_type=heads#L184
+- [`workbook.create_sheet()`](https://foss.heptapod.net/openpyxl/openpyxl/-/blob/branch/default/openpyxl/workbook/workbook.py?ref_type=heads#L184)
 
 ## 2.4 Deleting Worksheets
 
@@ -129,6 +150,10 @@ To remove a worksheet, use the `remove()` method:
 ```
 
 Note: ensure to save the workbook after deleting a sheet.
+
+Source code reference:
+
+- [`workbook.remove(self, worksheet)`](https://foss.heptapod.net/openpyxl/openpyxl/-/blob/branch/default/openpyxl/workbook/workbook.py?ref_type=heads#L232)
 
 ## 2.5 Renaming Worksheets
 
