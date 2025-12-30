@@ -1,5 +1,15 @@
 # Mastering Python's `openpyxl`
 
+[![X (formerly Twitter) Follow](https://img.shields.io/twitter/follow/XiaoqiZhao)](https://x.com/XiaoqiZhao)
+[![YouTube Channel Subscribers](https://img.shields.io/youtube/channel/subscribers/UCTshmTJGpJunOz23vCEhzWg)](https://www.youtube.com/@yasenzhao)
+[![Static Badge](https://img.shields.io/badge/My_LinkedIn--XiaoqiZhao-blue)](https://www.linkedin.com/in/xiaoqi-zhao)
+
+![GitHub Repo stars](https://img.shields.io/github/stars/yasenstar/learn_openpyxl)
+![GitHub forks](https://img.shields.io/github/forks/yasenstar/learn_openpyxl)
+[![license](https://img.shields.io/pypi/l/spyder.svg)](./LICENSE.txt)
+![GitHub language count](https://img.shields.io/github/languages/count/yasenstar/learn_openpyxl)
+[![pages-build-deployment](https://github.com/yasenstar/learn_openpyxl/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/yasenstar/learn_openpyxl/actions/workflows/pages/pages-build-deployment)
+
 - [Mastering Python's `openpyxl`](#mastering-pythons-openpyxl)
   - [Purpose](#purpose)
   - [High-Level Structure](#high-level-structure)
@@ -40,4 +50,4 @@ Read the detail structure from the [exported markdown format](./Mastering_openpy
 
 ---
 
-Last Updated at 12/27/2025, 3:34:21 PM 
+Last Updated at 12/30/2025, 9:12:15 PM 
