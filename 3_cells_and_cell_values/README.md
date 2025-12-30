@@ -45,12 +45,8 @@ Source code reference:
 
 Note:
 
-1. the `cell` coordinates are 1-based (the top-left call is A1).
+1. the `cell` coordinates are 1-based (the top-left cell is A1).
 2. an empty `cell` will have a `value` of `None`.
-
-Remeber - same as Excel - that cell coordinates are 1-based (the top-left cell is "A1").
-
-An empty cell will have a `value` of `None`.
 
 ## 3.2 Setting Cell Values
 
