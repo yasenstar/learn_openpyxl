@@ -162,6 +162,10 @@ Change a worksheet's name using the `title` attribute:
 ```python
 ```
 
+Source code reference:
+
+- `worksheet`'s `title` property: https://foss.heptapod.net/openpyxl/openpyxl/-/blob/branch/default/openpyxl/worksheet/worksheet.py?ref_type=heads#L105
+
 ## 2.6 Working with Multiple Workbooks
 
 openpyxl allows you to work with multiple workbooks simultaneously.
@@ -181,6 +185,10 @@ Below table lists main properties in a `workbook`:
 | `worksheets` | A list of all worksheets in the workbook. |
 | `sheetnames` | A list of the names of all worksheets. |
 | `properties` | Access to file properties using the `Workbook.properties` attribute, allowing setting things like author, last modified by, etc. |
+
+Source code reference:
+
+- `workbook.py`: https://foss.heptapod.net/openpyxl/openpyxl/-/blob/branch/default/openpyxl/workbook/workbook.py?ref_type=heads
 
 Remember to **always** save your changes using `workbook.save("filename.xlsx")` to persist modifications to the Excel file.
 

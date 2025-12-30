@@ -15,7 +15,32 @@
 
 ### 4.1.1 Fonts
 
+You can control font attributes like name, size, bold, italic, color, etc., using the `Font` class from `openpyxl.styles`, as below:
+
+```python
+```
+
+Source code reference:
+
+- `Font` class: https://foss.heptapod.net/openpyxl/openpyxl/-/blob/branch/default/openpyxl/styles/fonts.py?ref_type=heads#L32
+
+```python
+DEFAULT_FONT = Font(name="Calibri", sz=11, family=2, b=False, i=False,
+                    color=Color(theme=1), scheme="minor")
+```
+
+Note: the color can be specified using RGB hex codes (e.g., "FF0000" for red) or named colors(?), from documentation (https://openpyxl.pages.heptapod.net/openpyxl/styles.html#colours), you can find `aRGB colours` and `Indexed Colours`. (need test on the named colors)
+
 ### 4.1.2 Fill Colors
+
+Cell background colors are controlled with the `PatternFill` class:
+
+```python
+```
+
+Source code reference:
+
+- `PatternFill(Fill)` is inherit from class `Fill`: https://foss.heptapod.net/openpyxl/openpyxl/-/blob/branch/default/openpyxl/styles/fills.py?ref_type=heads#L68
 
 ### 4.1.3 Borders
 
