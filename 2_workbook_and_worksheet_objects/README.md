@@ -172,6 +172,14 @@ Source code reference:
 Change a worksheet's name using the `title` attribute:
 
 ```python
+from openpyxl import load_workbook
+
+workbook = load_workbook("my_workbook.xlsx")
+
+worksheet = workbook["Sheet2"]
+worksheet.title = "New Sheet Name"
+
+workbook.save("my_workbook_renamed.xlsx")
 ```
 
 Source code reference:
@@ -185,6 +193,22 @@ openpyxl allows you to work with multiple workbooks simultaneously.
 Just load or create multiple `workbook` objects:
 
 ```python
+from openpyxl import Workbook, load_workbook
+
+workbook1 = load_workbook("my_workbook.xlsx")
+workbook2 = Workbook()
+
+print(workbook1.sheetnames)
+
+# some processing
+workbook1.remove(workbook1.worksheets[3])
+new_sheet = workbook2.create_sheet("new sheet")
+
+print(workbook1.sheetnames)
+print(workbook1.properties)
+
+workbook1.save("my_workbook_modified.xlsx")
+workbook2.save("file2.xlsx")
 ```
 
 ## 2.7 Workbook Properties
@@ -210,4 +234,4 @@ Also, it's good practice to close the workbook using `workbook.close()` after yo
 
 ---
 
-Last Updated at: 12/27/2025, 5:52:58 PM 
+Last Updated at: 12/30/2025, 9:08:21 PM 
