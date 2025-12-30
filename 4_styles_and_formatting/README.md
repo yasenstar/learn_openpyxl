@@ -41,18 +41,70 @@ Cell background colors are controlled with the `PatternFill` class:
 Source code reference:
 
 - `PatternFill(Fill)` is inherit from class `Fill`: https://foss.heptapod.net/openpyxl/openpyxl/-/blob/branch/default/openpyxl/styles/fills.py?ref_type=heads#L68
+- `fill_type`: https://foss.heptapod.net/openpyxl/openpyxl/-/blob/branch/default/openpyxl/styles/fills.py?ref_type=heads#L42
 
 ### 4.1.3 Borders
 
+Borders are defined using the `Border`, `Side` classes:
+
+```python
+```
+
+Soruce code reference:
+
+- class `Border` in `borders.py`: https://foss.heptapod.net/openpyxl/openpyxl/-/blob/branch/default/openpyxl/styles/borders.py?ref_type=heads#L54
+  - `border_style = Alias('style')`
+- class `Side` in `borders.py`: https://foss.heptapod.net/openpyxl/openpyxl/-/blob/branch/default/openpyxl/styles/borders.py?ref_type=heads#L33
+  - `Side` `style=NoneSet()`: https://foss.heptapod.net/openpyxl/openpyxl/-/blob/branch/default/openpyxl/styles/borders.py?ref_type=heads#L41
+
 ### 4.1.4 Alignment
+
+Cell content alignment is controlled with the `Alignment` class:
+
+```python
+```
+
+Source code reference:
+
+- class `Alignment` in `alignment.py`: https://foss.heptapod.net/openpyxl/openpyxl/-/blob/branch/default/openpyxl/styles/alignment.py?ref_type=heads#L16
+
+```python
+horizontal_alignments = (
+    "general", "left", "center", "right", "fill", "justify", "centerContinuous",
+    "distributed", )
+vertical_aligments = (
+    "top", "center", "bottom", "justify", "distributed",
+)
+```
 
 ## 4.2 Number Formats
 
+Number formate were covered in the previous section (["Cells and Cell Values"](../3_cells_and_cell_values/README.md#35-number-formatting)).
+
+Source code reference:
+
+- Class `DifferentialStyle` in `differential.py`: https://foss.heptapod.net/openpyxl/openpyxl/-/blob/branch/default/openpyxl/styles/differential.py?ref_type=heads#L19
+- `rule.py`:
+  - class `ColorScaleRule`: https://foss.heptapod.net/openpyxl/openpyxl/-/blob/branch/default/openpyxl/formatting/rule.py?ref_type=heads#L214
+  - class `FormulaRule`: https://foss.heptapod.net/openpyxl/openpyxl/-/blob/branch/default/openpyxl/formatting/rule.py?ref_type=heads#L243
+  - class `CellIsRule`: https://foss.heptapod.net/openpyxl/openpyxl/-/blob/branch/default/openpyxl/formatting/rule.py?ref_type=heads#L253
+
 ## 4.3 Conditional Formatting
+
+Conditional formatting involves applying styles based on cell values or formulas.
+
+openpyxl provides support for this, but it's more complex; here in openpyxl documentation (https://openpyxl.pages.heptapod.net/openpyxl/formatting.html).
 
 ## 4.4 Styles and Themes
 
+openpyxl allows working with styles and themes, but the specifics are advanced and are best explored in the library’s documentation. Themes govern the overall look and feel, while styles provide more fine-grained control over individual elements.
+
 ## 4.5 Applying Styles to Cells and Ranges
+
+Styles are applied to cells using the appropriate style properties (e.g., cell.font, cell.fill, cell.alignment, cell.number_format, cell.border). To apply styles to ranges, iterate through the cells in the range and apply the styles to each cell individually, or explore using Conditional Formatting which can apply styles to ranges based on conditions. Creating and applying a custom Style object can also be helpful for consistently applying multiple formatting elements.
+
+```python
+```
 
 ---
 

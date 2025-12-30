@@ -1,7 +1,7 @@
 <map version="freeplane 1.12.1">
 <!--To view this file, download free mind mapping software Freeplane from https://www.freeplane.org -->
 <node TEXT="Mastering openpyxl" LOCALIZED_STYLE_REF="AutomaticLayout.level.root" FOLDED="false" ID="ID_1090958577" CREATED="1409300609620" MODIFIED="1766817575719"><hook NAME="MapStyle" background="#f5f5dcff">
-    <properties show_icon_for_attributes="true" edgeColorConfiguration="#808080ff,#ff0000ff,#0000ffff,#00ff00ff,#ff00ffff,#00ffffff,#7c0000ff,#00007cff,#007c00ff,#7c007cff,#007c7cff,#7c7c00ff" show_note_icons="true" fit_to_viewport="false" show_icons="BESIDE_NODES" associatedTemplateLocation="template:/light_sepia_template.mm" show_tags="UNDER_NODES"/>
+    <properties show_icon_for_attributes="true" edgeColorConfiguration="#808080ff,#ff0000ff,#0000ffff,#00ff00ff,#ff00ffff,#00ffffff,#7c0000ff,#00007cff,#007c00ff,#7c007cff,#007c7cff,#7c7c00ff" show_tags="UNDER_NODES" show_note_icons="true" associatedTemplateLocation="template:/light_sepia_template.mm" fit_to_viewport="false" show_icons="BESIDE_NODES"/>
     <tags category_separator="::"/>
 
 <map_styles>
@@ -9,7 +9,7 @@
 <font SIZE="24"/>
 <stylenode LOCALIZED_TEXT="styles.predefined" POSITION="bottom_or_right" STYLE="bubble">
 <stylenode LOCALIZED_TEXT="default" ID="ID_1558627382" ICON_SIZE="12 pt" FORMAT_AS_HYPERLINK="false" COLOR="#2c2b29" BACKGROUND_COLOR="#eedfcc" STYLE="bubble" SHAPE_HORIZONTAL_MARGIN="8 pt" SHAPE_VERTICAL_MARGIN="5 pt" BORDER_WIDTH_LIKE_EDGE="false" BORDER_WIDTH="1.9 px" BORDER_COLOR_LIKE_EDGE="true" BORDER_COLOR="#f0f0f0" BORDER_DASH_LIKE_EDGE="true" BORDER_DASH="SOLID" VGAP_QUANTITY="3 pt">
-<arrowlink SHAPE="CUBIC_CURVE" COLOR="#000000" WIDTH="2" TRANSPARENCY="200" DASH="" FONT_SIZE="9" FONT_FAMILY="SansSerif" DESTINATION="ID_1558627382" STARTINCLINATION="81.75 pt;-10.5 pt;" ENDINCLINATION="81.75 pt;19.5 pt;" STARTARROW="NONE" ENDARROW="DEFAULT"/>
+<arrowlink SHAPE="CUBIC_CURVE" COLOR="#000000" WIDTH="2" TRANSPARENCY="200" DASH="" FONT_SIZE="9" FONT_FAMILY="SansSerif" DESTINATION="ID_1558627382" STARTINCLINATION="81.75 pt;-9.75 pt;" ENDINCLINATION="81.75 pt;19.5 pt;" STARTARROW="NONE" ENDARROW="DEFAULT"/>
 <font NAME="SansSerif" SIZE="9" BOLD="false" STRIKETHROUGH="false" ITALIC="false"/>
 <edge STYLE="bezier" COLOR="#2e3440" WIDTH="3" DASH="SOLID"/>
 <richcontent TYPE="DETAILS" CONTENT-TYPE="plain/auto"/>
@@ -104,7 +104,7 @@
 <node TEXT="3.6 Dates and Times" ID="ID_503538469" CREATED="1766843086428" MODIFIED="1766843093909"/>
 <node TEXT="3.7 Working with Cell Ranges" ID="ID_297430130" CREATED="1766843094073" MODIFIED="1766843100140"/>
 </node>
-<node TEXT="4. Styles and Formatting" FOLDED="true" POSITION="bottom_or_right" ID="ID_142973714" CREATED="1766817670901" MODIFIED="1766817676775">
+<node TEXT="4. Styles and Formatting" POSITION="bottom_or_right" ID="ID_142973714" CREATED="1766817670901" MODIFIED="1766817676775">
 <node TEXT="4.1 Styles and Formatting" ID="ID_1930495994" CREATED="1766843100835" MODIFIED="1766843107911">
 <node TEXT="4.1.1 Fonts" ID="ID_1876183140" CREATED="1766843111748" MODIFIED="1766843115525"/>
 <node TEXT="4.1.2 Fill Colors" ID="ID_323528573" CREATED="1766843115740" MODIFIED="1766843124524"/>
@@ -112,7 +112,15 @@
 <node TEXT="4.1.4 Alignment" ID="ID_1829779086" CREATED="1766843131562" MODIFIED="1766843139186"/>
 </node>
 <node TEXT="4.2 Number Formats" ID="ID_180675859" CREATED="1766843170520" MODIFIED="1766843176387"/>
-<node TEXT="4.3 Conditional Formatting" ID="ID_285696711" CREATED="1766843176535" MODIFIED="1766843184754"/>
+<node TEXT="4.3 Conditional Formatting" ID="ID_285696711" CREATED="1766843176535" MODIFIED="1767062096145" LINK="https://openpyxl.pages.heptapod.net/openpyxl/formatting.html">
+<node TEXT="Builtin formats" ID="ID_1886296178" CREATED="1767062013048" MODIFIED="1767062029476">
+<node TEXT="ColorScale" ID="ID_1007574450" CREATED="1767062029487" MODIFIED="1767062032841"/>
+<node TEXT="IconSet" ID="ID_1027743473" CREATED="1767062033415" MODIFIED="1767062036569"/>
+<node TEXT="DataBar" ID="ID_1764799093" CREATED="1767062036742" MODIFIED="1767062038332"/>
+</node>
+<node TEXT="Standard conditional formats" ID="ID_1188944666" CREATED="1767062039142" MODIFIED="1767062045129"/>
+<node TEXT="Formatting Entire Rows" ID="ID_1399287069" CREATED="1767062045302" MODIFIED="1767062051657"/>
+</node>
 <node TEXT="4.4 Styles and Themes" ID="ID_1918883245" CREATED="1766843224454" MODIFIED="1766843234818"/>
 <node TEXT="4.5 Applying Styles to Cells and Ranges" ID="ID_1765697633" CREATED="1766843235038" MODIFIED="1766843246329"/>
 </node>
