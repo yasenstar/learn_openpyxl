@@ -171,6 +171,32 @@ openpyxl handls the conversion between Python's `datetime` objects and Excel's d
 You can efficiently work with ranges of cells using `sheet.iter_rows()` and `sheet.iter_cols()`. These methods provide iterators to traverse ranges efficiently:
 
 ```python
+from openpyxl import load_workbook
+
+workbook = load_workbook("my_workbook.xlsx")
+sheet = workbook.active
+
+# Iterate through row 1 to 10 and column A to D
+for row in sheet.iter_rows(
+    min_row = 1,
+    max_row = 5,
+    min_col = 1,
+    max_col = 5
+):
+    for cell in row:
+        print(cell.value, end = "\t")
+    print()
+
+# Iterate through column 1 to 4
+for col in sheet.iter_cols(
+    # min_row = 1,
+    max_row = 8,
+    # min_col = 1,
+    max_col = 2
+):
+    for cell in col:
+        print(cell.value, end="\t")
+    print()
 ```
 
 Source code reference:
@@ -182,4 +208,4 @@ Source code reference:
 
 ---
 
-Last Updated at: 12/28/2025, 8:14:43 AM 
+Last Updated at: 12/31/2025, 2:06:35 PM 
