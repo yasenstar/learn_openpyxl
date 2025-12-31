@@ -108,24 +108,24 @@ Fill Color Naming Conversion Mapping with Excel:
 
 | Fill Patter Full Name | Short Name | Name in Excel |
 | --- | --- | --- |
-| FILL_SOLID
-| FILL_PATTERN_DARKDOWN
-| FILL_PATTERN_DARKGRAY
-| FILL_PATTERN_DARKGRIP
-| FILL_PATTERN_DARKHORIZONTAL
-| FILL_PATTERN_DARKTRELLIS
-| FILL_PATTERN_DARKUP
-| FILL_PATTERN_DARKVERTICAL
-| FILL_PATTERN_GRAY0625
-| FILL_PATTERN_GRAY125
-| FILL_PATTERN_LIGHTDOWN
-| FILL_PATTERN_LIGHTGRAY
-| FILL_PATTERN_LIGHTGRID
-| FILL_PATTERN_LIGHTHORIZONTAL
-| FILL_PATTERN_LIGHTTRELLIS
-| FILL_PATTERN_LIGHTUP
-| FILL_PATTERN_LIGHTVERTICAL
-| FILL_PATTERN_MEDIUMGRAY
+| FILL_SOLID | solid | Solid |
+| FILL_PATTERN_DARKDOWN | darkDown | Reverse Diagonal Stripe |
+| FILL_PATTERN_DARKGRAY | darkGray | 75% Gray |
+| FILL_PATTERN_DARKGRID | drakGrid | Diagonal Crosshatch |
+| FILL_PATTERN_DARKHORIZONTAL | darkHorizontal | Horizontal Stripe |
+| FILL_PATTERN_DARKTRELLIS | darkTrellis | Thick Diagonal Crosshatch |
+| FILL_PATTERN_DARKUP | darkUp | Diagonal Stripe |
+| FILL_PATTERN_DARKVERTICAL | darkVertical | Vertical Stripe |
+| FILL_PATTERN_GRAY0625 | gray0625 | 6.25% Gray |
+| FILL_PATTERN_GRAY125 | gray125 | 12.5% Gray |
+| FILL_PATTERN_LIGHTDOWN | lightDown | Thin Reverse Diagonal Stripe |
+| FILL_PATTERN_LIGHTGRAY | lightGray | 25% Gray |
+| FILL_PATTERN_LIGHTGRID | lightGrid | Thin Horizontal Crosshatch |
+| FILL_PATTERN_LIGHTHORIZONTAL | lightHorizontal | Thin Horizontal Stripe |
+| FILL_PATTERN_LIGHTTRELLIS | lightTrellis | Thing Diagonal Crosshatch |
+| FILL_PATTERN_LIGHTUP | lightUp | Thin Diagonal Stripe |
+| FILL_PATTERN_LIGHTVERTICAL | lightVertical | Thing Vertical Stripe |
+| FILL_PATTERN_MEDIUMGRAY | mediumGray | 50% Gray |
 
 ## 4.3 Borders
 

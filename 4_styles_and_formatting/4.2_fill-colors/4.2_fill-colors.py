@@ -21,7 +21,7 @@ sheet["B2"] = "Light Up Blue"
 my_fill2 = PatternFill(
     start_color = "0000FF",
     end_color = "FFFFFF",
-    fill_type = "lightUp"
+    fill_type = "mediumGray"
 )
 
 sheet["B2"].fill = my_fill2
