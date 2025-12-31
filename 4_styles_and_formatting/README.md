@@ -7,9 +7,6 @@
   - [4.4 Alignment](#44-alignment)
   - [4.5 Number Formats](#45-number-formats)
   - [4.6 Conditional Formatting](#46-conditional-formatting)
-    - [4.6.1 Builtin Formats](#461-builtin-formats)
-    - [4.6.2 Standard Conditional Formats](#462-standard-conditional-formats)
-    - [4.6.3 Formatting Entire Rows (Range)](#463-formatting-entire-rows-range)
   - [4.7 Styles and Themes](#47-styles-and-themes)
   - [4.8 Applying Styles to Cells and Ranges](#48-applying-styles-to-cells-and-ranges)
 
@@ -183,6 +180,23 @@ style = NoneSet(values=('dashDot','dashDotDot', 'dashed','dotted',
 Cell content alignment is controlled with the `Alignment` class:
 
 ```python
+from openpyxl import Workbook
+from openpyxl.styles import Alignment
+
+workbook = Workbook()
+sheet = workbook.active
+
+sheet["C5"] = "Center Aligned Text"
+
+my_alignment = Alignment(
+    horizontal = "center",
+    vertical = "top",
+    wrapText = True
+)
+
+sheet["C5"].alignment = my_alignment
+
+workbook.save("alignment_styles.xlsx")
 ```
 
 Source code reference:
@@ -208,11 +222,79 @@ Conditional formatting involves applying styles based on cell values or formulas
 
 openpyxl provides support for this, but it's more complex; here in openpyxl documentation (https://openpyxl.pages.heptapod.net/openpyxl/formatting.html).
 
-### 4.6.1 Builtin Formats
+- Builtin Formats
+- Standard Conditional Formats
+- Formatting Entire Rows (Range)
 
-### 4.6.2 Standard Conditional Formats
+```python
+from openpyxl import Workbook
+from openpyxl.styles import Font, PatternFill, Border, Color
+from openpyxl.styles.differential import DifferentialStyle
+from openpyxl.formatting.rule import ColorScaleRule, CellIsRule, FormulaRule
 
-### 4.6.3 Formatting Entire Rows (Range)
+wb = Workbook()
+ws = wb.active
+
+# Create fill
+redFill = PatternFill(
+    start_color = "EE1111",
+    end_color = "EE1111",
+    fill_type = "solid"
+)
+
+# Add a two-color scale
+ws.conditional_formatting.add(
+    "A1:A10",
+    ColorScaleRule(
+        start_type = "min",
+        start_color = "AA0000",
+        end_type = "max",
+        end_color = "00AA00"
+    )
+)
+
+# Add a three-color scale
+ws.conditional_formatting.add(
+    "B1:B10",
+    ColorScaleRule(
+        start_type = "percentile",
+        start_value = 10,
+        start_color = "FF0000",
+        mid_type = "percentile",
+        mid_value = 50,
+        mid_color = "0000FF",
+        end_type = "percentile",
+        end_value = 90,
+        end_color = "00AA00"
+    )
+)
+
+# Formatting baed on a cell comparison
+
+ws.conditional_formatting.add(
+    "C2:C10",
+    CellIsRule(
+        operator = "between",
+        formula = ['1', '5'],
+        stopIfTrue  = True,
+        fill = redFill
+    )
+)
+
+myFont = Font()
+myBorder = Border()
+ws.conditional_formatting.add(
+    "D1:D10",
+    FormulaRule(
+        formula = ["E1=0"],
+        font = myFont,
+        border = myBorder,
+        fill = redFill
+    )
+)
+
+wb.save("conditional-formatting.xlsx")
+```
 
 Source code reference:
 
