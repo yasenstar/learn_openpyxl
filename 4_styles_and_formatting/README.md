@@ -104,6 +104,29 @@ Source code reference:
 - `PatternFill(Fill)` is inherit from class `Fill`: https://foss.heptapod.net/openpyxl/openpyxl/-/blob/branch/default/openpyxl/styles/fills.py?ref_type=heads#L68
 - `fill_type`: https://foss.heptapod.net/openpyxl/openpyxl/-/blob/branch/default/openpyxl/styles/fills.py?ref_type=heads#L42
 
+Fill Color Naming Conversion Mapping with Excel:
+
+| Fill Patter Full Name | Short Name | Name in Excel |
+| --- | --- | --- |
+| FILL_SOLID
+| FILL_PATTERN_DARKDOWN
+| FILL_PATTERN_DARKGRAY
+| FILL_PATTERN_DARKGRIP
+| FILL_PATTERN_DARKHORIZONTAL
+| FILL_PATTERN_DARKTRELLIS
+| FILL_PATTERN_DARKUP
+| FILL_PATTERN_DARKVERTICAL
+| FILL_PATTERN_GRAY0625
+| FILL_PATTERN_GRAY125
+| FILL_PATTERN_LIGHTDOWN
+| FILL_PATTERN_LIGHTGRAY
+| FILL_PATTERN_LIGHTGRID
+| FILL_PATTERN_LIGHTHORIZONTAL
+| FILL_PATTERN_LIGHTTRELLIS
+| FILL_PATTERN_LIGHTUP
+| FILL_PATTERN_LIGHTVERTICAL
+| FILL_PATTERN_MEDIUMGRAY
+
 ## 4.3 Borders
 
 Borders are defined using the `Border`, `Side` classes:
