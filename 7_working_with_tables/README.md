@@ -8,11 +8,23 @@
 
 ## 7.1 Creating Tables
 
+```python
+```
+
 ## 7.2 Formatting Tables
+
+```python
+```
 
 ## 7.3 Working with Table Data
 
+```python
+```
+
 ## 7.4 Filtering and Sorting
+
+```python
+```
 
 ---
 

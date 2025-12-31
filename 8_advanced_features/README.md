@@ -9,13 +9,28 @@
 
 ## 8.1 Working with Pivot Tables
 
+```python
+```
+
 ## 8.2 Data Validation
+
+```python
+```
 
 ## 8.3 Macros and VBA
 
+```python
+```
+
 ## 8.4 External Links
 
+```python
+```
+
 ## 8.5 Protecting Worksheets and Workbooks
+
+```python
+```
 
 ---
 

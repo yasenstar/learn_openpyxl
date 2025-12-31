@@ -8,12 +8,24 @@
 
 ## 5.1 Creating Charts
 
+```python
+```
+
 ## 5.2 Chart Types
+
+```python
+```
 
 ## 5.3 Customizing Charts
 
+```python
+```
+
 ## 5.4 Adding Charts to Worksheets
+
+```python
+```
 
 ---
 
-Last Updated at: 12/28/2025, 8:17:00 AM 
+Last Updated at: 12/31/2025, 10:02:48 PM  

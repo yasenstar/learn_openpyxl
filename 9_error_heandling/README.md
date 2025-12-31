@@ -8,10 +8,29 @@
   - [9.5 Security Consideration](#95-security-consideration)
 
 ## 9.1 Common Errors and Troubleshooting
+
+```python
+```
+
 ## 9.2 Performance Optimization
+
+```python
+```
+
 ## 9.3 Memory Management
+
+```python
+```
+
 ## 9.4 Large Files and Efficient Processing
+
+```python
+```
+
 ## 9.5 Security Consideration
+
+```python
+```
 
 ---
 

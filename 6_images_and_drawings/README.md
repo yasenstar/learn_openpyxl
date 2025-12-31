@@ -8,11 +8,23 @@
 
 ## 6.1 Adding Images to Worksheets
 
+```python
+```
+
 ## 6.2 Working with Drawing Objects
+
+```python
+```
 
 ## 6.3 Resizing and Positioning Images
 
+```python
+```
+
 ## 6.4 Image Formats
+
+```python
+```
 
 ---
 
