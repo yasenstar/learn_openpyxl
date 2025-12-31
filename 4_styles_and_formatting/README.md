@@ -132,6 +132,35 @@ Fill Color Naming Conversion Mapping with Excel:
 Borders are defined using the `Border`, `Side` classes:
 
 ```python
+from openpyxl import Workbook
+from openpyxl.styles import Border, Side
+
+workbook = Workbook()
+sheet = workbook.active
+
+sheet["B2"] = "Thin Border"
+
+sheet["D2"] = "Thick Border"
+
+thin_border = Border(
+    left = Side(style = 'thin'),
+    right = Side(style = 'thin'),
+    top = Side(style = 'thin'),
+    bottom = Side(style = 'dashDotDot', color = "0000FF")
+)
+
+thick_border = Border(
+    left = Side(style = 'thick', color = "FF0000"),
+    right = Side(style = 'thick'),
+    top = Side(style = 'thick'),
+    bottom = Side(style = 'thick', color = "0000FF")
+)
+
+sheet["B2"].border = thin_border
+
+sheet["D2"].border = thick_border
+
+workbook.save("border_styles.xlsx")
 ```
 
 Soruce code reference:
@@ -140,6 +169,14 @@ Soruce code reference:
   - `border_style = Alias('style')`
 - class `Side` in `borders.py`: https://foss.heptapod.net/openpyxl/openpyxl/-/blob/branch/default/openpyxl/styles/borders.py?ref_type=heads#L33
   - `Side` `style=NoneSet()`: https://foss.heptapod.net/openpyxl/openpyxl/-/blob/branch/default/openpyxl/styles/borders.py?ref_type=heads#L41
+
+Valid Border Side Styles:
+
+```python
+style = NoneSet(values=('dashDot','dashDotDot', 'dashed','dotted',
+  'double','hair', 'medium', 'mediumDashDot', 'mediumDashDotDot',
+  'mediumDashed', 'slantDashDot', 'thick', 'thin'))
+```
 
 ## 4.4 Alignment
 
