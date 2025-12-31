@@ -78,6 +78,12 @@ vertical_aligments = (
 
 Number formate were covered in the previous section (["Cells and Cell Values"](../3_cells_and_cell_values/README.md#35-number-formatting)).
 
+## 4.6 Conditional Formatting
+
+Conditional formatting involves applying styles based on cell values or formulas.
+
+openpyxl provides support for this, but it's more complex; here in openpyxl documentation (https://openpyxl.pages.heptapod.net/openpyxl/formatting.html).
+
 Source code reference:
 
 - Class `DifferentialStyle` in `differential.py`: https://foss.heptapod.net/openpyxl/openpyxl/-/blob/branch/default/openpyxl/styles/differential.py?ref_type=heads#L19
@@ -85,12 +91,6 @@ Source code reference:
   - class `ColorScaleRule`: https://foss.heptapod.net/openpyxl/openpyxl/-/blob/branch/default/openpyxl/formatting/rule.py?ref_type=heads#L214
   - class `FormulaRule`: https://foss.heptapod.net/openpyxl/openpyxl/-/blob/branch/default/openpyxl/formatting/rule.py?ref_type=heads#L243
   - class `CellIsRule`: https://foss.heptapod.net/openpyxl/openpyxl/-/blob/branch/default/openpyxl/formatting/rule.py?ref_type=heads#L253
-
-## 4.6 Conditional Formatting
-
-Conditional formatting involves applying styles based on cell values or formulas.
-
-openpyxl provides support for this, but it's more complex; here in openpyxl documentation (https://openpyxl.pages.heptapod.net/openpyxl/formatting.html).
 
 ## 4.7 Styles and Themes
 
