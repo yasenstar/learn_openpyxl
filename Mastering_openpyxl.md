@@ -24,6 +24,8 @@
 
 ## 2.6 Working with Multiple Wookbooks
 
+## 2.7 Workbook Properties
+
 # 3. Cells and Cell Values
 
 ## 3.1 Accessing Cell Values
@@ -42,29 +44,55 @@
 
 # 4. Styles and Formatting
 
-## 4.1 Styles and Formatting
+## 4.1 Fonts
 
-### 4.1.1 Fonts
+## 4.2 Fill Colors
 
-### 4.1.2 Fill Colors
+## 4.3 Borders
 
-### 4.1.3 Borders
+## 4.4 Alignment
 
-### 4.1.4 Alignment
+## 4.5 Number Formats
+ (see:3.5 Number Formatting)
+## 4.6 Conditional Formatting
 
-## 4.2 Number Formats
+### 4.6.1 Built-in formats
 
-## 4.3 Conditional Formatting
+#### ColorScale
 
-## 4.4 Styles and Themes
+#### IconSet
 
-## 4.5 Applying Styles to Cells and Ranges
+#### DataBar
 
+### 4.6.2 Standard conditional formats
+
+### 4.6.3 Formatting Entire Rows
+
+## 4.7 Styles and Themes
+
+## 4.8 Applying Styles to Cells and Ranges
+ (see:3.7 Working with Cell Ranges)
 # 5. Charts and Graphs
 
 ## 5.1 Creating Charts
-
+ (see:4.8 Applying Styles to Cells and Ranges)
 ## 5.2 Chart Types
+
+### 1) BarChart
+
+### 2) LineChart
+
+### 3) PieChart
+
+### 4) ScatterChart
+
+### 5) AreaChart
+
+### 6) RadarChart
+
+### 7) DoughnutChart
+
+### 8) StockChart
 
 ## 5.3 Customizing Charts
 
