@@ -7,6 +7,9 @@
   - [4.4 Alignment](#44-alignment)
   - [4.5 Number Formats](#45-number-formats)
   - [4.6 Conditional Formatting](#46-conditional-formatting)
+    - [4.6.1 Builtin Formats](#461-builtin-formats)
+    - [4.6.2 Standard Conditional Formats](#462-standard-conditional-formats)
+    - [4.6.3 Formatting Entire Rows (Range)](#463-formatting-entire-rows-range)
   - [4.7 Styles and Themes](#47-styles-and-themes)
   - [4.8 Applying Styles to Cells and Ranges](#48-applying-styles-to-cells-and-ranges)
 
@@ -83,6 +86,12 @@ Number formate were covered in the previous section (["Cells and Cell Values"](.
 Conditional formatting involves applying styles based on cell values or formulas.
 
 openpyxl provides support for this, but it's more complex; here in openpyxl documentation (https://openpyxl.pages.heptapod.net/openpyxl/formatting.html).
+
+### 4.6.1 Builtin Formats
+
+### 4.6.2 Standard Conditional Formats
+
+### 4.6.3 Formatting Entire Rows (Range)
 
 Source code reference:
 
