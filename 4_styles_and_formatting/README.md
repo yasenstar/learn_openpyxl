@@ -18,15 +18,47 @@
 You can control font attributes like name, size, bold, italic, color, etc., using the `Font` class from `openpyxl.styles`, as below:
 
 ```python
+from openpyxl import Workbook
+from openpyxl.styles import Font
+
+workbook = Workbook()
+sheet = workbook.active
+
+sheet["A1"] = "Styled Text"
+
+my_font = Font(
+    name = "Arial",
+    size = 20,
+    bold = True,
+    italic = True,
+    underline = "double",
+    strikethrough = True,
+    shadow = True,
+    color = "0000FF"
+)
+
+sheet["A1"].font = my_font
+
+workbook.save("font_styles.xlsx")
 ```
 
 Source code reference:
 
 - `Font` class: https://foss.heptapod.net/openpyxl/openpyxl/-/blob/branch/default/openpyxl/styles/fonts.py?ref_type=heads#L32
 
+Default Font Styles:
+
 ```python
 DEFAULT_FONT = Font(name="Calibri", sz=11, family=2, b=False, i=False,
                     color=Color(theme=1), scheme="minor")
+```
+
+Referece on `underline`:
+
+```python
+    u = NestedNoneSet(values=('single', 'double', 'singleAccounting',
+                             'doubleAccounting'))
+    underline = Alias("u")
 ```
 
 Note: the color can be specified using RGB hex codes (e.g., "FF0000" for red) or named colors(?), from documentation (https://openpyxl.pages.heptapod.net/openpyxl/styles.html#colours), you can find `aRGB colours` and `Indexed Colours`. (need test on the named colors)
