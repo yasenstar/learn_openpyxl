@@ -106,7 +106,7 @@ Source code reference:
 
 Fill Color Naming Conversion Mapping with Excel:
 
-| Fill Patter Full Name | Short Name | Name in Excel |
+| Fill Pattern Full Name | Short Name | Name in Excel |
 | --- | --- | --- |
 | FILL_SOLID | solid | Solid |
 | FILL_PATTERN_DARKDOWN | darkDown | Reverse Diagonal Stripe |
@@ -124,7 +124,7 @@ Fill Color Naming Conversion Mapping with Excel:
 | FILL_PATTERN_LIGHTHORIZONTAL | lightHorizontal | Thin Horizontal Stripe |
 | FILL_PATTERN_LIGHTTRELLIS | lightTrellis | Thing Diagonal Crosshatch |
 | FILL_PATTERN_LIGHTUP | lightUp | Thin Diagonal Stripe |
-| FILL_PATTERN_LIGHTVERTICAL | lightVertical | Thing Vertical Stripe |
+| FILL_PATTERN_LIGHTVERTICAL | lightVertical | Thin Vertical Stripe |
 | FILL_PATTERN_MEDIUMGRAY | mediumGray | 50% Gray |
 
 ## 4.3 Borders
