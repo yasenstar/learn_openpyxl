@@ -54,6 +54,8 @@ sheet.add_chart(my_chart, "D1")
 workbook.save("bar_chart_sample.xlsx")
 ```
 
+![BarChart](img/BarChart.png)
+
 Source code reference:
 
 - `openpyxl.chart` module: https://foss.heptapod.net/openpyxl/openpyxl/-/tree/branch/default/openpyxl/chart
@@ -114,6 +116,8 @@ sheet.add_chart(myChart, "E2")
 
 workbook.save("Line_Chart_Sample.xlsx")
 ```
+
+![LineChart](img/LineChart.png)
 
 Source code reference:
 
