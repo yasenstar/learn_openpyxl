@@ -15,6 +15,7 @@
   - [High-Level Structure](#high-level-structure)
   - [Contents](#contents)
   - [Resources about `openpyxl`](#resources-about-openpyxl)
+  - [Demo Video Course on Udemy](#demo-video-course-on-udemy)
 
 ## Purpose
 
@@ -48,6 +49,10 @@ Read the detail structure from the [exported markdown format](./Mastering_openpy
 - [Technical Manuals about openpyxl](https://manuals.muthu.co/posts/python-modules/openpyxl.html)
 - [A Guide on openpyxl, by Pedro Pregueiro](https://realpython.com/openpyxl-excel-spreadsheets-python/)
 
+## Demo Video Course on Udemy
+
+[![udemy-published-cover](img/udemy_published_cover.png)](https://www.udemy.com/course/mastering-openpyxl-in-python-for-microsoft-excel/?referralCode=26384A8115F94F7B6FC0)
+
 ---
 
-Last Updated at 12/30/2025, 9:12:15 PM 
+Last Updated at 1/1/2026, 9:10:00 AM  
