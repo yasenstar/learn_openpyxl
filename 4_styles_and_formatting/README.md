@@ -313,6 +313,37 @@ openpyxl allows working with styles and themes, but the specifics are advanced a
 Styles are applied to cells using the appropriate style properties (e.g., cell.font, cell.fill, cell.alignment, cell.number_format, cell.border). To apply styles to ranges, iterate through the cells in the range and apply the styles to each cell individually, or explore using Conditional Formatting which can apply styles to ranges based on conditions. Creating and applying a custom Style object can also be helpful for consistently applying multiple formatting elements.
 
 ```python
+from openpyxl import Workbook
+from openpyxl.styles import Font, PatternFill, Border, Side, Alignment
+
+workbook = Workbook()
+sheet = workbook.active
+
+# Define styles once
+bold_red_font = Font(bold = True, color = "FF0000")
+yellow_fill = PatternFill(
+    start_color = "FFFF00",
+    end_color = "FFFF00",
+    fill_type = "solid"
+)
+thin_border = Border(
+    left = Side(style = "thin"),
+    right = Side(style = "thin"),
+    top = Side(style = "thin"),
+    bottom = Side(style = "thick")
+)
+center_alignment = Alignment(horizontal="center")
+
+# Define styles to a range
+for row in sheet.iter_rows(min_row=1, max_row=3, min_col=1, max_col=3):
+    for cell in row:
+        cell.value = "hello"
+        cell.font = bold_red_font
+        cell.fill = yellow_fill
+        cell.border = thin_border
+        cell.alignment = center_alignment
+
+workbook.save("range_styles.xlsx")
 ```
 
 ---
