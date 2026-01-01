@@ -37,7 +37,7 @@ myChart.add_data(myData)
 
 # 4. Define Categories (Column A)
 
-myCats = Reference(sheet, min_col=1, min_row=2, max_row=8)
+myCats = Reference(sheet, min_col=1, max_col=1, min_row=2, max_row=8)
 myChart.set_categories(myCats)
 
 # 5. Add chart into the sheet
