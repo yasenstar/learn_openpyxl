@@ -76,6 +76,11 @@ Source Code Reference:
 
 - `pixels_to_EMU`: https://foss.heptapod.net/openpyxl/openpyxl/-/blob/branch/default/openpyxl/utils/units.py#L62
 
+Open Questions:
+
+1. The `width` and `height` properties are not to drawing object, but to `Image` object
+2. No effect of `left` and `top` property during testing.
+
 ## 6.4 Image Formats
 
 openpyxl supports various image formats, including PNG, JPEG, GIF, and others. The specific formats supported depend on the underlying libraries used by openpyxl (usually Pillow). If you encounter issues with a specific format, check your Pillow installation and ensure it supports that format. PNG is generally recommended for lossless image quality.
