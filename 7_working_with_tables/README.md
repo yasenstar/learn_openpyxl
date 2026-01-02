@@ -8,8 +8,16 @@
 
 ## 7.1 Creating Tables
 
+openpyxl provides functionality to work with Excel tables (also known as `ListObjects`).
+
+Creating a table involves specifying a range of cells and optionally providing a table name.
+
 ```python
 ```
+
+Source Code Reference:
+
+- `worksheet/table.py`: https://foss.heptapod.net/openpyxl/openpyxl/-/blob/branch/default/openpyxl/worksheet/table.py
 
 ## 7.2 Formatting Tables
 
