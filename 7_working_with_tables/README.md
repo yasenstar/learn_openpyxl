@@ -114,6 +114,12 @@ Source Code Reference:
 
 ## 7.3 Working with Table Data
 
+Accessing and modifying data within a table is similar to working with regular cells.
+
+- You can directly access cells using their coordinates or iterate through rows and columns.
+- Adding rows usually appends to the end of the table.
+- Deleting rows or columns requires careful handling of the table’s structure and might need updating the table’s reference range using table.ref.
+
 ```python
 ```
 
