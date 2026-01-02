@@ -8,6 +8,10 @@
 
 ## 6.1 Adding Images to Worksheets
 
+Adding images to worksheets uses the `openpyxl.drawing.image` module, you need to indicate the path of your image file, support `gif`, `jpeg` and `png` formats.
+
+If you don't input the location of the image in worksheet, it's by default from `anchor = "A1"`, check source code for detail.
+
 ```python
 from openpyxl import Workbook
 from openpyxl.drawing.image import Image
@@ -30,7 +34,15 @@ Source Code Reference:
 
 - `drawing/image.py`: https://foss.heptapod.net/openpyxl/openpyxl/-/blob/branch/default/openpyxl/drawing/image.py
 
+Extended information: treat `xlsx` as `zip`, you can extract the excel file after renaming its extension to `zip`, then following are the structure and we can see our image file is saved under the sub-folder:
+
+| Level 1 | Level 2 | Level 3 |
+| --- | --- | --- |
+| ![xls-1](img/xlsx_1.png) | ![xls-2](img/xlsx_2.png) | ![xls-3](img/xlsx_3.png) |
+
 ## 6.2 Working with Drawing Objects
+
+Images and other drawing objects in openpyxl are represented as `Drawing` objects.
 
 ```python
 ```
